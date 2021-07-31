@@ -49,6 +49,7 @@ p {
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-box {
@@ -58,6 +59,7 @@ p {
 
 .site-nav {
   display: flex;
+  background-color: rgb(26, 243, 36);
 }
 
 .site-nav .nav-item {
@@ -143,6 +145,7 @@ logo .logo-end-head {
   letter-spacing: 0.03em;
   text-decoration: none;
   outline: 1px solid rgb(245, 8, 8);
+  background-color: rgb(255, 251, 0);
 }
 
 .logo-end-head {
@@ -157,6 +160,7 @@ logo .logo-end-head {
   letter-spacing: 0.03em;
   text-decoration: none;
   outline: 1px solid green;
+  background-color: rgb(243, 238, 230);
 }
 
 .logo-end-footer {
