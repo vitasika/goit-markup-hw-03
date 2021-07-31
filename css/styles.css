@@ -132,6 +132,8 @@ logo .logo-end-head {
 }*/
 
 .logo {
+  display: flex;
+  align-items: center;
   color: var(--second-text-color);
   font-family: Raleway;
   font-weight: 700;
@@ -144,6 +146,8 @@ logo .logo-end-head {
 }
 
 .logo-end-head {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   font-family: Raleway;
   font-weight: 700;
