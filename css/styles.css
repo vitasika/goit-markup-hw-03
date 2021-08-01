@@ -22,6 +22,11 @@ li {
   list-style: none;
 }
 
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -32,16 +37,17 @@ h3,
 h4,
 ul,
 p {
-  margin: 0px;
+  margin: 0;
 }
 
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  outline: 1px solid rgb(250, 5, 5);
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /*outline: 1px solid rgb(250, 5, 5);*/
 }
 
 /*------------------ Header box ------------------*/
@@ -53,17 +59,20 @@ p {
 }
 
 .header-box {
-  outline: 1px solid green;
   background: var(--background-head-color);
+
+  /*outline: 1px solid green;*/
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .site-nav {
   display: flex;
-  background-color: rgb(26, 243, 36);
-}
-
-.site-nav .nav-item {
-  background-color: orange;
+  align-items: center;
+  margin-left: 93px;
 }
 
 .site-nav .nav-item:not(:last-child) {
@@ -72,10 +81,6 @@ p {
 
 .site-nav-adress {
   display: flex;
-}
-
-.site-nav-adress .nav-adress {
-  background-color: rgb(0, 47, 255);
 }
 
 .site-nav-adress .nav-adress + .nav-adress {
@@ -95,8 +100,9 @@ p {
 /*------------------ Work box ------------------*/
 .work-box {
   background: var(--background-work-color);
-  outline: 1px solid green;
   margin: 0px;
+
+  /*outline: 1px solid green;*/
 }
 
 .work-box-first {
@@ -123,61 +129,51 @@ p {
 
 /*------------------ logo main and footer ------------------*/
 
-/*..logo-box {
-  align-items: center;
-}
-
-logo .logo-end-head {
-  display: flexbox;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}*/
-
-.logo {
-  display: flex;
-  align-items: center;
-  color: var(--second-text-color);
+.logo,
+.logo-footer,
+.logo-end-head,
+.logo-end-footer {
   font-family: Raleway;
   font-weight: 700;
   font-style: inherit;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.logo {
+  color: var(--second-text-color);
   text-decoration: none;
-  outline: 1px solid rgb(245, 8, 8);
-  background-color: rgb(255, 251, 0);
+
+  /*outline: 1px solid rgb(245, 8, 8);
+  background-color: rgb(255, 251, 0);*/
 }
 
 .logo-end-head {
-  display: flex;
-  align-items: center;
   color: var(--primary-text-color);
-  font-family: Raleway;
-  font-weight: 700;
-  font-style: inherit;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   text-decoration: none;
-  outline: 1px solid green;
-  background-color: rgb(243, 238, 230);
+
+  /*outline: 1px solid green;*/
+}
+
+.logo-footer {
+  color: var(--second-text-color);
+  text-decoration: none;
+  margin: 0px 90px 0px 0px;
+
+  /*outline: 1px solid rgb(245, 8, 8);
+  background-color: rgb(255, 251, 0);*/
 }
 
 .logo-end-footer {
   color: var(--second-text-logo-color);
-  font-family: Raleway;
-  font-style: inherit;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  outline: 1px solid green;
+
+  /*outline: 1px solid green;*/
 }
 
 /*------------------ button navi header ------------------*/
-.button-head-navi {
-  display: block;
 
+.site-navi-link {
   color: var(--primary-text-color);
   font-family: Roboto;
   font-style: normal;
@@ -186,13 +182,14 @@ logo .logo-end-head {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
 
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.button-head-navi:hover,
-.button-head-navi:focus {
+
+.site-navi-link:hover,
+.site-navi-link:focus {
   color: var(--second-text-color);
 }
 
@@ -206,7 +203,8 @@ logo .logo-end-head {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  outline: 1px solid green;
+
+  /*outline: 1px solid green;*/
 
   padding-top: 32px;
   padding-bottom: 32px;
@@ -218,17 +216,8 @@ logo .logo-end-head {
 }
 
 /*------------------ contakt footer ------------------*/
-.contakt-footer-addres-color {
-  color: var(--background-head-color);
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  outline: 1px solid green;
-}
 
+.contakt-footer-addres-color,
 .contakt-footer-color {
   font-family: Roboto;
   font-style: normal;
@@ -236,13 +225,29 @@ logo .logo-end-head {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.contakt-footer-addres-color {
+  color: var(--background-head-color);
+  margin-bottom: 9px;
+}
+
+.contakt-footer-color {
   color: var(--contakt-footer-color);
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
+  margin-bottom: 60px;
+}
+
+.contakt-footer-addres {
+}
+
+.footer-addres {
+  margin-bottom: 9px;
 }
 
 /*------------------ block hero ------------------*/
 .section-title-hero {
-  font-family: 'Roboto';
+  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -274,6 +279,26 @@ logo .logo-end-head {
 }
 
 /*------------------ section to work ------------------*/
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-work {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.section-work .work-text {
+  width: 270px;
+}
+
+.section-work-foto {
+  display: flex;
+}
+
 h3.section-title-text {
   font-family: Roboto;
   font-style: normal;
@@ -283,7 +308,10 @@ h3.section-title-text {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+
   outline: 1px solid green;
+
+  margin-bottom: 10px;
 }
 
 p.section-p-text {
@@ -294,6 +322,9 @@ p.section-p-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--p-text-color);
+
+  margin-bottom: 94px;
+
   outline: 1px solid green;
 }
 
@@ -365,6 +396,29 @@ p.section-p-team-text {
 }
 
 /*------------------ my projects ------------------*/
+
+.projekt-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.project-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.project-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.projekt-section .project-item {
+}
+
 h2.section-title {
   font-family: 'Roboto';
   font-style: normal;
@@ -385,4 +439,13 @@ p.section-p-text-port {
   letter-spacing: 0.03em;
   color: var(--p-text-color);
   outline: 1px solid green;
+}
+
+.section-title {
+  display: block;
+  outline: 1px solid green;
+}
+
+.section-p-text-port {
+  outline: 1px solid rgb(241, 63, 18);
 }
