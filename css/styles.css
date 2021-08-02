@@ -13,7 +13,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
-  background-color: lightgreen; /*фоновый цвет что бы были видны белые элементы макета*/
+  /*background-color: lightgreen; фоновый цвет что бы были видны белые элементы макета*/
 }
 
 /*------------------ глобальные изменения ------------------*/
@@ -60,6 +60,7 @@ p {
 
 .header-box {
   background: var(--background-head-color);
+  border-bottom: 1px solid #ececec;
 
   /*outline: 1px solid green;*/
 }
@@ -122,9 +123,10 @@ p {
 }
 
 /*------------------ Footer box ------------------*/
-.box-footer {
-  outline: 1px solid green;
+.box-footer {  
   background: var(--background-footer-color);
+  height: 252px;
+  outline: 1px solid green;
 }
 
 /*------------------ logo main and footer ------------------*/
@@ -153,13 +155,15 @@ p {
   color: var(--primary-text-color);
   text-decoration: none;
 
-  /*outline: 1px solid green;*/
+  /*outline: 1px solid red;*/
 }
 
 .logo-footer {
+  display: flex;
   color: var(--second-text-color);
   text-decoration: none;
-  margin: 0px 90px 0px 0px;
+  padding-top: 60px;
+  margin-bottom: 20px;
 
   /*outline: 1px solid rgb(245, 8, 8);
   background-color: rgb(255, 251, 0);*/
@@ -239,6 +243,9 @@ p {
 }
 
 .contakt-footer-addres {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .footer-addres {
@@ -378,12 +385,12 @@ p.section-p-team-text {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  background: var(--background-head-color);
+  background: var(--background-comand-color);
   width: auto;
   height: 38px;
   border-color: transparent;
   border-radius: 4px;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
 }
 
 .button-navi-port:hover,
@@ -395,17 +402,39 @@ p.section-p-team-text {
   border-radius: 4px;
 }
 
+.portfolio-btn {
+  display: flex;
+  /*background-color: lightgreen;*/
+  width: 1200px;
+  height: 182px;
+  padding-top: 92px;
+}
+
+.item-portfolio-btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-portfolio-btn .position-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
 /*------------------ my projects ------------------*/
 
 .projekt-section {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 94px;
 }
 
 .project-item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .project-item:nth-child(3n) {
@@ -417,6 +446,7 @@ p.section-p-team-text {
 }
 
 .projekt-section .project-item {
+  /*outline: 1px solid green;*/
 }
 
 h2.section-title {
@@ -427,7 +457,6 @@ h2.section-title {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  outline: 1px solid green;
 }
 
 p.section-p-text-port {
@@ -438,14 +467,15 @@ p.section-p-text-port {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--p-text-color);
-  outline: 1px solid green;
 }
 
 .section-title {
   display: block;
-  outline: 1px solid green;
 }
 
 .section-p-text-port {
-  outline: 1px solid rgb(241, 63, 18);
+}
+
+.card-text-portfolio {
+  margin: 25px 20px;
 }
