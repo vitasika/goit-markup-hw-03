@@ -445,9 +445,6 @@ p.section-p-team-text {
   margin-bottom: 0;
 }
 
-.projekt-section .project-item {
-  /*outline: 1px solid green;*/
-}
 
 h2.section-title {
   font-family: 'Roboto';
@@ -471,9 +468,6 @@ p.section-p-text-port {
 
 .section-title {
   display: block;
-}
-
-.section-p-text-port {
 }
 
 .card-text-portfolio {
