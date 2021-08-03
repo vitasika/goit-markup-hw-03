@@ -90,7 +90,6 @@ p {
 
 /*------------------ Hero box ------------------*/
 .hero-box {
-  outline: 1px solid green;
   height: 600px;
   left: 0px;
   top: 80px;
@@ -99,6 +98,9 @@ p {
 }
 
 /*------------------ Work box ------------------*/
+
+
+
 .work-box {
   background: var(--background-work-color);
   margin: 0px;
@@ -107,12 +109,17 @@ p {
 }
 
 .work-box-first {
-  outline: 2px solid rgb(47, 55, 172);
+  padding-top: 94px;
+  margin-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
   background: var(--background-work-color);
 }
 
 .work-box-second {
-  outline: 2px solid rgb(47, 55, 172);
+  /*outline: 2px solid rgb(47, 55, 172);*/
+
+
   background: var(--background-work-color);
 }
 
@@ -120,15 +127,14 @@ p {
 .team-box {
   padding-top: 94px;
   padding-bottom: 94px;
-  
+
   background: var(--background-comand-color);
 }
 
 /*------------------ Footer box ------------------*/
-.box-footer {  
+.box-footer {
   background: var(--background-footer-color);
   height: 252px;
-  outline: 1px solid green;
 }
 
 /*------------------ logo main and footer ------------------*/
@@ -247,7 +253,6 @@ p {
 .contakt-footer-addres {
   display: flex;
   flex-direction: column;
-
 }
 
 .footer-addres {
@@ -289,23 +294,40 @@ p {
 
 /*------------------ section to work ------------------*/
 
-.work-list {
-  display: flex;
-  flex-wrap: wrap;
+.work-hidden-text{
+  text-align: center;
+  display: none;
 }
+
+/*.work-list {
+  display: flex;  
+  flex-wrap: wrap;
+}*/
 
 .section-work {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  width: 1170px;
+  height: 100px;
+
+  /*margin-top: 94px;
+  margin-bottom: 94px;*/
 }
 
-.section-work .work-text {
+.work-text{  
   width: 270px;
+}
+
+.section-work .work-text:not(:last-child) {
+  margin-right: 30px;
 }
 
 .section-work-foto {
   display: flex;
+  padding-bottom: 94px;
+}
+
+.section-work-foto .position-foto-work:not(:last-child) {
+  margin-right: 30px;
 }
 
 h3.section-title-text {
@@ -318,7 +340,7 @@ h3.section-title-text {
   text-transform: uppercase;
   color: var(--primary-text-color);
 
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
 
   margin-bottom: 10px;
 }
@@ -334,7 +356,7 @@ p.section-p-text {
 
   margin-bottom: 94px;
 
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
 }
 
 h2.section-title-work {
@@ -347,9 +369,10 @@ h2.section-title-work {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 
-
   /*outline: 1px solid green;*/
 }
+
+
 
 /*------------------ my team ------------------*/
 
@@ -364,7 +387,6 @@ h3.section-team-text {
   color: var(--primary-text-color);
 
   margin-bottom: 10px;
-
 
   /*outline: 1px solid green;*/
 }
@@ -382,12 +404,12 @@ p.section-p-team-text {
   /*outline: 1px solid green;*/
 }
 
-.manager-box{
+.manager-box {
   width: 270px;
   height: 368px;
 }
 
-.team-line{
+.team-line {
   display: flex;
 }
 
@@ -395,22 +417,22 @@ p.section-p-team-text {
   margin-right: 30px;
 }
 
-.section-title-work{
+.section-title-work {
   margin-bottom: 50px;
 }
 
-.line-manager{
-  background: #FFFFFF;
+.line-manager {
+  background: #ffffff;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.manager-text{
+.manager-text {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 
 /*------------------ portfolio page ------------------*/
 
@@ -483,7 +505,6 @@ p.section-p-team-text {
 .project-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
 
 h2.section-title {
   font-family: 'Roboto';
