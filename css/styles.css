@@ -91,8 +91,6 @@ p {
 /*------------------ Hero box ------------------*/
 .hero-box {
   height: 600px;
-  left: 0px;
-  top: 80px;
   background: #2f303a;
   padding-top: 200px;
 }
@@ -102,7 +100,7 @@ p {
 
 
 .work-box {
-  background: var(--background-work-color);
+  background: var(--background-comand-color);
   margin: 0px;
 
   /*outline: 1px solid green;*/
@@ -110,17 +108,13 @@ p {
 
 .work-box-first {
   padding-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
-  background: var(--background-work-color);
 }
 
 .work-box-second {
   /*outline: 2px solid rgb(47, 55, 172);*/
-
-
-  background: var(--background-work-color);
 }
 
 /*------------------ Team box ------------------*/
@@ -135,6 +129,8 @@ p {
 .box-footer {
   background: var(--background-footer-color);
   height: 252px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 /*------------------ logo main and footer ------------------*/
@@ -170,8 +166,7 @@ p {
   display: flex;
   color: var(--second-text-color);
   text-decoration: none;
-  padding-top: 60px;
-  margin-bottom: 20px;
+  
 
   /*outline: 1px solid rgb(245, 8, 8);
   background-color: rgb(255, 251, 0);*/
@@ -255,9 +250,7 @@ p {
   flex-direction: column;
 }
 
-.footer-addres {
-  margin-bottom: 9px;
-}
+
 
 /*------------------ block hero ------------------*/
 .section-title-hero {
@@ -430,8 +423,8 @@ p.section-p-team-text {
 }
 
 .manager-text {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*------------------ portfolio page ------------------*/
@@ -448,9 +441,9 @@ p.section-p-team-text {
   color: var(--primary-text-color);
   background: var(--background-comand-color);
   width: auto;
-  height: 38px;
   border-color: transparent;
   border-radius: 4px;
+  padding: 6px 22px;
   /*outline: 1px solid green;*/
 }
 
@@ -469,6 +462,7 @@ p.section-p-team-text {
   width: 1200px;
   height: 182px;
   padding-top: 92px;
+  padding-bottom: 50px;
 }
 
 .item-portfolio-btn {
@@ -479,6 +473,11 @@ p.section-p-team-text {
 
 .item-portfolio-btn .position-btn:not(:last-child) {
   margin-right: 8px;
+}
+
+.position-btn{
+  margin: 0px;
+  padding: 0px;
 }
 
 /*------------------ my projects ------------------*/
@@ -531,5 +530,5 @@ p.section-p-text-port {
 }
 
 .card-text-portfolio {
-  margin: 25px 20px;
+  padding: 25px 20px;
 }
