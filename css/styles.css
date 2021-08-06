@@ -100,17 +100,20 @@ p {
 
 
 .work-box {
-  background: var(--background-comand-color);
+  background: var(--background-head-color);
   margin: 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   /*outline: 1px solid green;*/
 }
 
-.work-box-first {
+.work-box-first {  
+  /* outline: 1px solid green; */
+}
+
+.work-box-second{
   padding-top: 94px;
-  padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 
@@ -127,7 +130,7 @@ p {
   background: var(--background-footer-color);
   height: 252px;
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 /*------------------ logo main and footer ------------------*/
@@ -229,22 +232,26 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  
 }
 
 .contakt-footer-addres-color {
   color: var(--background-head-color);
+  padding-top: 20px;
   margin-bottom: 9px;
 }
 
-.contakt-footer-color {
+.contakt-footer-color, .contakt-footer-addres {
   color: var(--contakt-footer-color);
-  /*outline: 1px solid green;*/
-  margin-bottom: 60px;
 }
 
 .contakt-footer-addres {
   display: flex;
   flex-direction: column;
+}
+
+.footer-addres-mail{
+  margin-bottom: 9px;
 }
 
 
@@ -313,7 +320,6 @@ p {
 
 .section-work-foto {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .section-work-foto .position-foto-work:not(:last-child) {
@@ -455,11 +461,8 @@ p.section-p-team-text {
 
 .portfolio-btn {
   display: flex;
-  /*background-color: lightgreen;*/
   width: 1200px;
-  height: 182px;
-  padding-top: 92px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .item-portfolio-btn {
@@ -477,12 +480,19 @@ p.section-p-team-text {
   padding: 0px;
 }
 
+.portfolio-section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 /*------------------ my projects ------------------*/
 
 .projekt-section {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 
 .project-item {
@@ -527,5 +537,5 @@ p.section-p-text-port {
 }
 
 .card-text-portfolio {
-  padding: 25px 20px;
+  padding: 20px 25px;
 }
